@@ -13,7 +13,7 @@ exports.create = (req, res) => {
         customer.address = req.body.address;
         customer.age = req.body.age;
     
-        // Save to MySQL database
+       
         Customer.create(customer).then(result => {    
             // send uploading message to client
             res.status(200).json({
